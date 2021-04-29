@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ff00"
+    tools:context=".MainActivity">
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second 액티비티"
+            android:textSize="30dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rdo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third 액티비티"
+            android:textSize="30dp"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2번째나 3번째로 가자!"
+        android:textSize="30dp"/>
+
+
+</LinearLayout>

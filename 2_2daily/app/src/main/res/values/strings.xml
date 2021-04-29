@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Daily routine</string>
+
+    <string-array name="wants_array">
+        <item>appearance(외모)</item>
+        <item>Ability(능력)</item>
+        <item>Personality(성격)</item>
+        <item>Lineage(가문)</item>
+        <item>Faith(신앙)</item>
+
+    </string-array>
+</resources>

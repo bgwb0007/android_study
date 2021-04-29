@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tLay1"
+        >
+
+        <!--테이블 첫번째 줄-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수면"
+                android:layout_gravity="right|center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/txtSleepTime"
+                android:layout_width="50dp"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:text="시간"
+                android:layout_width="30dp"
+                />
+        </TableRow>
+
+
+        <!--테이블 두번째 줄-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            > <!--체크박스 코딩 __ 시간-->
+            <!--체크박스 독서 __ 시간-->
+            <CheckBox
+                android:id="@+id/CheckedCodingTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="코딩"
+                />
+
+            <EditText
+                android:id="@+id/txtCodingTime"
+                android:layout_width="50dp"
+                android:focusable="false"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:text="시간"
+                android:layout_width="30dp"
+                />
+
+            <CheckBox
+                android:id="@+id/CheckedReadingTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="독서"
+                />
+
+            <EditText
+                android:id="@+id/txtReadingTime"
+                android:layout_width="50dp"
+                android:focusable="false"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:text="시간"
+                android:layout_width="30dp"
+                />
+
+        </TableRow>
+
+
+        <!--테이블 세번째 줄-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            > <!--체크박스 영어 __ 시간-->
+            <!--체크박스 운동 __ 시간-->
+            <CheckBox
+                android:id="@+id/CheckedEnglishTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="영어"
+                />
+
+            <EditText
+                android:id="@+id/txtEnglishTime"
+                android:layout_width="50dp"
+                android:focusable="false"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:text="시간"
+                android:layout_width="30dp"
+                />
+
+            <CheckBox
+                android:id="@+id/CheckedExerciseTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="운동"
+                />
+
+            <EditText
+                android:id="@+id/txtExerciseTime"
+                android:layout_width="50dp"
+                android:focusable="false"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:text="시간"
+                android:layout_width="30dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="이상형"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idealType"
+                android:layout_span="5"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="처리결과"
+        android:layout_below="@id/tLay1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.나는 7시간 잠을 잡니다!"
+        android:id="@+id/tV1"
+        android:layout_below="@+id/btn1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.나는 꿈을 위해 ?시간 투자합니다!"
+        android:id="@+id/tV2"
+        android:layout_below="@+id/tV1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.나의 이상형은 ???입니다!"
+        android:id="@+id/tV3"
+        android:layout_below="@+id/tV2"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tV3"
+        android:columnWidth="90dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:id="@+id/gridView"
+        />
+
+
+
+
+</RelativeLayout>
